@@ -49,17 +49,11 @@ function render() {
   floor.render();
 
   if (keyIsDown(LEFT_ARROW)) {
+    player.x -= 5;
   }
 
   if (keyIsDown(RIGHT_ARROW)) {
-    player.v++;
-    player.x += player.v;
-  } else {
-    if (player.v < 0) {
-      player.v = 0;
-    }
-
-    player.v--;
+    player.x += 5;
   }
 
   if (keyIsDown(UP_ARROW)) {

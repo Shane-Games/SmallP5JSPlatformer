@@ -1,5 +1,5 @@
 class Player {
-  constructor(x, y, w, vX, vY, s, iJ) {
+  constructor(x, y, w, vX, vY, s) {
     this.x = x;
     this.y = y;
     this.w = w;
@@ -24,7 +24,7 @@ class Player {
 
     if (keyIsDown(LEFT_ARROW)) {
       if (player.vX < player.s) {
-        player.vX -= 0.75;
+        player.vX -= 0.6;
       }
     }
 
